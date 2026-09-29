@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Mi Sitio</h1>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Hero -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>¡Bienvenido!</h2>
+                <p>Esta es tu página web personal</p>
+                <button class="btn" onclick="mostrarMensaje()">Haz clic aquí</button>
+            </div>
+        </section>
+
+        <!-- Sección Acerca de -->
+        <section id="acerca" class="about">
+            <div class="container">
+                <h2>Acerca de Mí</h2>
+                <p>Esto es una página web moderna y responsive creada con HTML, CSS y JavaScript. Puedes personalizarla según tus necesidades.</p>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2>Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>💻 Desarrollo Web</h3>
+                        <p>Sitios web modernos y funcionales</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>📱 Diseño Responsive</h3>
+                        <p>Compatible con todos los dispositivos</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>⚡ Optimización</h3>
+                        <p>Rápido y eficiente</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form onsubmit="enviarFormulario(event)">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu email" required>
+                    <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
